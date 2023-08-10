@@ -128,6 +128,9 @@ def GetTradeInformation(update: Update, trade: dict, balance: float) -> None:
     elif(trade['Symbol'] == 'US30'):
         multiplier = 0.01
         
+    elif(trade['Symbol'] == 'US30.i'):
+        multiplier = 0.01
+        
     elif(str(trade['Entry']).index('.') >= 2):
         multiplier = 0.01
 
@@ -414,7 +417,7 @@ def welcome(update: Update, context: CallbackContext) -> None:
         context: CallbackContext object that stores commonly used objects in handler callbacks
     """
 
-    welcome_message = "Welcome to the FX Signal Copier Telegram Bot! 💻💸\n\nYou can use this bot to enter trades directly from Telegram and get a detailed look at your risk to reward ratio with profit, loss, and calculated lot size. You are able to change specific settings such as allowed symbols, risk factor, and more from your personalized Python script and environment variables.\n\nUse the /help command to view instructions and example trades."
+    welcome_message = "Hello Happy, \n\ Hope you and your wife doing well, Let's not waste any more time! 💻💸\n\nUse the /help command to view instructions and example trades."
     
     # sends messages to user
     update.effective_message.reply_text(welcome_message)
