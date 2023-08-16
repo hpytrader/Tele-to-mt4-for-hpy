@@ -187,13 +187,13 @@ def CreateTable(trade: dict, balance: float, stopLossPips: int, takeProfitPips: 
     table.add_row(['Position Size', trade['PositionSize']])
     
     table.add_row(['\nCurrent Balance', '\n$ {:,.2f}'.format(balance)])
-    table.add_row(['Potential Loss', '$ {:,.2f}'.format(round((trade['PositionSize'] * 10) * stopLossPips, 2))])
+    table.add_row(['Potential Loss', '$ {:,.2f}'.format(round((trade['PositionSize'] * 0.1) * stopLossPips, 2))])
 
     # total potential profit from trade
     totalProfit = 0
 
     for count, takeProfit in enumerate(takeProfitPips):
-        profit = round((trade['PositionSize'] * 10 * (1 / len(takeProfitPips))) * takeProfit, 2)
+        profit = round((trade['PositionSize'] * 0.1 * (1 / len(takeProfitPips))) * takeProfit, 2)
         table.add_row([f'TP {count + 1} Profit', '$ {:,.2f}'.format(profit)])
         
         # sums potential profit from each take profit target
@@ -417,7 +417,7 @@ def welcome(update: Update, context: CallbackContext) -> None:
         context: CallbackContext object that stores commonly used objects in handler callbacks
     """
 
-    welcome_message = "Hello Happy, \n\ Hope you and your wife doing well, Let's not waste any more time! 💻💸\n\nUse the /help command to view instructions and example trades."
+    welcome_message = "Hello Vittrs, \n\ Hope you are doing well, Let's not waste any more time! 💻💸\n\nUse the /help command to view instructions and example trades."
     
     # sends messages to user
     update.effective_message.reply_text(welcome_message)
