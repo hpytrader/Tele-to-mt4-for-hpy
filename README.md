@@ -1,4 +1,4 @@
-# MT4/MT5 Trade Copier by Vittr Fin-Tech 💻💸
+# MT4/MT5 Trade Copier Updated by Vittr Fin-Tech 💻💸
 
 This Telegram bot allows users to enter trades directly from Telegram and get a detailed look at the risk-to-reward ratio with profit, loss, and calculated lot size. You can change specific settings such as allowed symbols, risk factor, and more from your personalized Python script and environment variables.
 
@@ -42,7 +42,7 @@ Start a conversation with @BotFather on Telegram and create a new bot with a uni
 
 **4. Scroll down to 'Public Git repository' and paste the following URL**
 ```
-https://github.com/ogunjobiFX/MT4-MT5-Forex-Signal-Copier-Telegram-Bot
+https://github.com/hpytrader/Tele-to-mt4-for-hpy
 ```
 
 **5. Set up Render Application**
@@ -74,7 +74,4 @@ If at any point you decide to make a change to any of the environment variables,
 
 **Congratulations!** 🥳 If you followed these steps correctly, you should now be able to open a conversation with your bot on Telegram and calculate trade risk-to-reward along with placing trades. For help on how to use the bot, send the /help command for bot instructions and example trades.
 
-# License 📝
-&copy; 2023 Tosin Ogunjobi. All rights reserved.
 
-Licensed under the MIT license.
