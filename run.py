@@ -39,6 +39,9 @@ CALCULATE, TRADE, DECISION = range(3)
 # allowed FX symbols
 SYMBOLS = ['BTCUSD', 'SPX500', 'US30', 'US30.i', 'US30.cash', 'US30.x', 'AUDCAD', 'AUDCHF', 'AUDJPY', 'AUDNZD', 'AUDUSD', 'CADCHF', 'CADJPY', 'CHFJPY', 'EURAUD', 'EURCAD', 'EURCHF', 'EURGBP', 'EURJPY', 'EURNZD', 'EURUSD', 'GBPAUD', 'GBPCAD', 'GBPCHF', 'GBPJPY', 'GBPNZD', 'GBPUSD', 'NOW', 'NZDCAD', 'NZDCHF', 'NZDJPY', 'NZDUSD', 'USDCAD', 'USDCHF', 'USDJPY', 'XAGUSD', 'XAUUSD']
 
+# Create a mapping or alias for "AP" to represent "US30.cash"
+SYMBOLS_ALIAS = SYMBOLS + ['AP']
+
 # RISK FACTOR
 RISK_FACTOR = float(os.environ.get("RISK_FACTOR"))
 
